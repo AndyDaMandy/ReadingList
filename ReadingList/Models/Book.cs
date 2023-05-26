@@ -11,7 +11,8 @@ public class Book
     public string? Author { get; set; }
 
     public string? Description { get; set; }
-
+    
+    [Display(Name = "Added Date")]
     [DataType(DataType.Date)] 
     public DateTime AddedDate { get; set; }
     
