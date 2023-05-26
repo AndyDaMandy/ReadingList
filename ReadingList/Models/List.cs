@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ReadingList.Models;
 
@@ -13,4 +14,6 @@ public class List
     [DataType(DataType.Date)] 
     public DateTime CreationDate { get; set; }
     public string? Note { get; set; }
+
+    public ICollection<Book> Books { get; set; }
 }
